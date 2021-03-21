@@ -45,6 +45,8 @@ nav {
 
 nav ul {
   padding: 0px;
+  text-align: center;
+  list-style-type: none;
 }
 
 nav li {
@@ -69,7 +71,7 @@ footer {
 .search_bar input[type="text"] {
   position: relative;
   left: 25%;
-  top: -40%;
+  top: 25%;
   width: 30%;
   height: auto;
 
