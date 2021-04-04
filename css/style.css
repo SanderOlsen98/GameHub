@@ -47,6 +47,10 @@ nav ul {
     text-align: center;
     list-style-type: none;
   }
+
+header {
+    justify-content: start;
+  }
   
 nav {
     display: block;
@@ -93,7 +97,7 @@ footer {
     position: relative;
     left: 25%;
     top: 25%;
-    width: 30%;
+    width: 20%;
     height: auto;
   
     background-color: white;
@@ -151,4 +155,12 @@ header a {
     .featured {
         grid-template-columns: repeat(5, 1fr);
     }
+}
+
+/* Footer */
+
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #000;
 }
