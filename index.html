@@ -7,31 +7,46 @@
         <meta charset="UTF-8"/>
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-        <link href="css/style.css" rel="stylesheet" />
-        <script src="https://kit.fontawesome.com/b318972c4d.js" crossorigin="anonymous"></script>
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/9f8fc3ed9d.js" crossorigin="anonymous"></script>
     </head>
     <body>
-        <section>
-            <div class="search_bar">
-                <img src="images/GameHub_Logo.png" alt="Logo" class="resize">  
-                <input type="text" placeholder="Search..">
-            </div>    
-        </section>
         <header>
-            <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
-            <input type="checkbox" id="hamburger-menu" />
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="buy.html">Buy</a></li>
-                <li><a href="sell.html">Sell</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="my_account.html">My Account</a></li>
-                <li><a href="create_account.html">Create Account</a></li>
-            </ul>
-        </nav>
-        </header>
+            <section class="logo_adjust">
+                <img src="images/GameHub_Logo.png" alt="Logo" class="logo">
+            </section>
+            <nav>
+                <a href="index.html" class="logo"></a>
+                <input type="checkbox" id="box-1">
+                <label id="toggler" for="box-1">
+                    <span>MENU <i class="fas fa-bars"></i></span>
+                </label>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Buy</a></li>
+                    <li><a href="#">Sell</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">Create Account</a></li>
+                </ul>
+                <div id="navbar-form">
+                    <input type="checkbox" id="box-2">
+                    <form action="" id="search-form">
+                        <input type="search" placeholder="Search" id="search-bar">
+                        <button id="search-btn" type="submit">
+                            <span><i class="fas fa-search"></i></span>
+                        </button>
+                    </form>
+                    <label for="box-2" id="search-form-opener">
+                        <span><i class="fas fa-search"></i></span>
+                    </label>
+        
+                    <label for="box-2" id="search-form-closer">
+                        <span><i class="fas fa-times"></i></span>
+                    </label>
+                </div>
+            </nav>
         <main>
             <section class="welcome"></section>
             <section class="top">
@@ -39,7 +54,7 @@
                 <p>Support a fellow gamer, prices on a used game will be significantely cheaper than buying brand new!</p>
             </section>
             <section class="top">
-                <h1>Top Sellers</h1>
+                <h2>Top Sellers</h2>
                 <h3>Top selling games for a cheap price!</h3>
             </section>
             <section class="featured">
@@ -70,7 +85,7 @@
                 </div>
             </section>
             <section class="top">
-                <h1>Top Deals</h1>
+                <h2>Top Deals</h2>
             </section>
             <section class="featured">
                 <div class="products">
