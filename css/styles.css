@@ -45,7 +45,7 @@ nav ul {
 }
 
 nav ul li {
-  font-family: "Cabin", serif;
+  font-family: "Francois One", serif;
   display: inline-block;
   font-weight: bolder;
   text-transform: uppercase;
@@ -56,6 +56,12 @@ nav ul li {
 nav ul li a {
   text-decoration: none;
   color: #1b203d;
+}
+
+nav ul li a:hover {
+  color: #34eb5c;
+  transition: 0.3s ease-out;
+ 
 }
 
 input[type="checkbox"] {
@@ -487,3 +493,15 @@ background-color: #35b6e0;
 .wrapper .buttons:nth-child(4) span{
   color: #ff0000;
 }
+
+
+/* Buy Page */
+
+.buy {
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+  
