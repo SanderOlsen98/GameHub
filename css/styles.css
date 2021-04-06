@@ -64,6 +64,119 @@ nav ul li a:hover {
  
 }
 
+#menu:before,
+#menu:after {
+  content: '';
+  display: table;
+}
+
+#menu:after {
+  clear: both;
+}
+
+#menu li {
+  float: left;
+  box-shadow: 1px 0 0 #35b6e0;
+  position: relative;
+}
+
+#menu a {
+  float: left;
+  padding: 12px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#menu li:hover > a{
+  color: #DFDFDF;
+  background: #35b6e0;
+}
+
+#menu ul {
+  margin: 20px 0 0 0;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 46px;
+  left: 0;
+  z-index: 1;
+  background: #35b6e0;
+  border-radius: 2px;
+  transition: all .3s ease-in-out;
+}
+
+#menu li:hover > ul {
+  opacity: 1;
+  visibility: visible;
+  margin: 0;
+}
+
+#menu ul ul {
+  top: 0;
+  left: 150px;
+  margin: 0 0 0 20px;
+}
+
+#menu ul li {
+  float: none;
+  display: block;
+  box-shadow: 0 1px 0 #35b6e0, 0 2px 0 #35b6e0;
+}
+
+#menu ul li:last-child {
+  box-shadow: none;
+}
+
+#menu ul a {
+  padding: 10px;
+  width: 130px;
+  display: block;
+  white-space: nowrap;
+  float: none;
+  text-transform: uppercase;
+}
+
+#menu ul:hover {
+  background-color: #35b6e0;
+}
+
+#menu ul li:first-child > a {
+  border-radius: 3px 3px 0 0;
+}
+
+#menu ul li:first-child > a:after {
+  content: '';
+  position: absolute;
+  left: 40px;
+  top: -6px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 6px solid #000;
+}
+
+#menu ul ul li:first-child a:after {
+  border-bottom: 6px solid transparent;
+  border-top: 6px solid transparent;
+  border-right: 6px solid #000;
+  left: -6px;
+  top: 50%;
+  margin-top: -6px;
+  border-left: 0;
+}
+
+#menu ul li:first-child a:hover:after {
+  border-bottom-color: #35b6e0;
+}
+
+#menu ul li:first-child a:hover:after {
+  border-bottom-color: #35b6e0;
+  border-right-color: transparent;
+}
+
+#menu ul li:last-child > a {
+  border-radius: 0 0 3px 3px;
+}
+
 input[type="checkbox"] {
   display: none;
 }
@@ -183,7 +296,16 @@ input[type="checkbox"] {
   }
 }
 
-.logo_adjust{
+@media screen and (max-width:390px) {
+  .logo_adjust {
+    height: 50px;
+    width: 50px;
+    display: none;
+  }
+  
+}
+
+.logo_adjust {
   display: flex;
   flex-direction: column;
   justify-content: left;
@@ -196,7 +318,7 @@ input[type="checkbox"] {
 
 }
 
-.logo{
+.logo {
 z-index: 0;
 margin-top: 5px;
 height: 220px;
@@ -493,15 +615,3 @@ background-color: #35b6e0;
 .wrapper .buttons:nth-child(4) span{
   color: #ff0000;
 }
-
-
-/* Buy Page */
-
-.buy {
-  width: 100%;
-  height: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-  
