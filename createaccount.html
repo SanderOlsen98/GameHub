@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>GameHub - For Gamers By Gamers</title>
+        <meta name="description" content="Home page for GameHub"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta charset="UTF-8"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/9f8fc3ed9d.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <section class="logo_adjust">
+                <img src="images/GameHub_Logo.png" alt="Logo" class="logo">
+            </section>
+            <nav>
+                <a href="index.html" class="logo"></a>
+                <input type="checkbox" id="box-1">
+                <label id="toggler" for="box-1">
+                    <span>MENU <i class="fas fa-bars"></i></span>
+                </label>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="buy.html">Buy</a>
+                        <ul>
+                            <li><a href="buy.html">All Games</a></li>
+                            <li><a href="games/under10.html">Under $10</a></li>
+                            <li><a href="games/under20.html">Under $20</a></li>
+                            <li><a href="games/under30.html">Under $30</a></li>
+                            <li><a href="games/deals.html">Deals</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="sell.html">Sell</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="myaccount">My Account</a></li>
+                    <li><a href="createaccount.html">Create Account</a></li>
+                </ul>
+                <div id="navbar-form">
+                    <input type="checkbox" id="box-2">
+                    <form action="" id="search-form">
+                        <input type="search" placeholder="Search" id="search-bar">
+                        <button id="search-btn" type="submit">
+                            <span><i class="fas fa-search"></i></span>
+                        </button>
+                    </form>
+                    <label for="box-2" id="search-form-opener">
+                        <span><i class="fas fa-search"></i></span>
+                    </label>
+                    <label for="box-2" id="search-form-closer">
+                        <span><i class="fas fa-times"></i></span>
+                    </label>
+                </div>
+            </nav>
+        <main>
+            <section class="welcome"></section>
+            <section class="top">
+                <div class="loginbox">
+                    <img src="images/avatar.png" class="avatar">
+                        <h1>Login Here</h1>
+                        <form>
+                            <p>Username</p>
+                            <input type="text" name="" placeholder="Enter Username">
+                            <p>Password</p>
+                            <input type="password" name="" placeholder="Enter Password">
+                            <input type="submit" name="" value="Login">
+                            <a href="#">Lost your password?</a><br>
+                            <a href="#">Don't have an account?</a>
+                        </form>
+                    </div>
+            </section>
+            <section class="favicons">
+                <div class="wrapper">
+                    <div class="buttons">
+                        <div class="icon">
+                        <i class="fab fa-facebook"></i>
+                    </div>
+                    <span>Facebook</span>
+                </div>
+                <div class="wrapper">
+                    <div class="buttons">
+                        <div class="icon">
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                    <span>Instagram</span>
+                </div>
+                <div class="wrapper">
+                    <div class="buttons">
+                        <div class="icon">
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <span>Youtube</span>
+                </div>
+                <div class="wrapper">
+                    <div class="buttons">
+                        <div class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </div>
+                    <span>Twitter</span>
+                </div>
+            </section>
+            <section>
+                <div class="footer-container">
+                    <div class="footer">
+                        <div class="footer-heading footer-1">
+                            <h4>Contact</h4>
+                            <a href="#">Email</a>
+                            <a href="#">Live Chat</a>
+                            <a href="#">Phone</a>
+                            <a href="#">Newsletter</a>
+                            <a href="#">Support</a>
+                        </div>
+                        <div class="footer-heading footer-2">
+                            <h4>About us</h4>
+                            <a href="#">What we do</a>
+                            <a href="#">Feedback</a>
+                            <a href="#">Location</a>
+                            <a href="#">Terms of Service</a>
+                        </div>
+                        <div class="footer-heading footer-3">
+                            <h4>Social Media</h4>
+                            <a href="#">Instagram</a>
+                            <a href="#">Facebook</a>
+                            <a href="#">Yooutube</a>
+                            <a href="#">Twitter</a>
+                        </div>
+                        <div class="footer-email-form">
+                            <h4>Sign Up For The Newsletter!</h4>
+                            <input type="email" placeholder="Enter your email address.." id="footer-email">
+                            <input type="submit" value="Sign Up" id="footer-email-btn">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>Copyright &copy GameHub 2021</footer>
+    </body>
+</html>
