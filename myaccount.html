@@ -60,11 +60,13 @@
                 <div class="loginbox">
                     <img src="images/avatar.png" class="avatar">
                         <h1>Login Here</h1>
-                        <form>
+                        <form id="accountForm">
                             <p>Username</p>
-                            <input type="text" name="" placeholder="Enter Username">
+                            <input type="text" name="username" placeholder="Enter Username" id="userName">
+                            <div class="form-error" id="userNameError">Please enter Correct username</div>
                             <p>Password</p>
-                            <input type="password" name="" placeholder="Enter Password">
+                            <input type="password" name="password" placeholder="Enter Password" id="pasword">
+                            <div class="form-error" id="passwordError">Wrong Password</div>
                             <input type="submit" name="" value="Login">
                             <a href="#">Lost your password?</a><br>
                             <a href="#">Don't have an account?</a>
@@ -135,6 +137,7 @@
                 </div>
             </section>
         </main>
+        <script src="js/myaccount.js"></script>
         <footer>Copyright &copy GameHub 2021</footer>
     </body>
 </html>
