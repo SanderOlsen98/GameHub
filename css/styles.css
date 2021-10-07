@@ -687,10 +687,13 @@ input[type="password"] {
   color: #35b6e0;
 }
 
-
 .form-error {
   display: none;
   color: red;
   font-size: 0.9rem;
   margin-top: 2px;
+}
+
+.cart {
+  margin-right: 20rem;
 }
