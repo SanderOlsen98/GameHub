@@ -38,20 +38,8 @@
                     <li><a href="../myaccount.html">My Account</a></li>
                     <li><a href="../createaccount.html">Create Account</a></li>
                 </ul>
-                <div id="navbar-form">
-                    <input type="checkbox" id="box-2">
-                    <form action="" id="search-form">
-                        <input type="search" placeholder="Search" id="search-bar">
-                        <button id="search-btn" type="submit">
-                            <span><i class="fas fa-search"></i></span>
-                        </button>
-                    </form>
-                    <label for="box-2" id="search-form-opener">
-                        <span><i class="fas fa-search"></i></span>
-                    </label>
-                    <label for="box-2" id="search-form-closer">
-                        <span><i class="fas fa-times"></i></span>
-                    </label>
+                <div>
+                    <a href="cart.html"><span class="cart" id="cartinfo"><i class="fas fa-shopping-cart"></i><span>0</span></span></a>
                 </div>
             </nav>
         </header>
@@ -63,26 +51,26 @@
             </section>
             <section class="featured">
                 <div class="products">
-                    <img src="../images/GameHub_covers.jpg" alt="Ping Pong">
+                    <img src="../images/Ping Pong.jpg" alt="Ping Pong">
                     <h3>Ping Pong</h3>
-                    <a href="buy.html" class="price price_button">9.99$</a>
+                    <a class="price add-cart" onclick="alertbox()">9.99$</a>
                 </div>
                 <div class="products">
-                    <img src="../images/GameHub_covers2.jpg" alt="Super Duper">
+                    <img src="../images/Super Duper.jpg" alt="Super Duper">
                     <h3>Super Duper</h3>
-                    <a href="buy.html" class="price price_button">5.99$</a>
+                    <a class="price add-cart" onclick="alertbox()">5.99$</a>
                 </div>
                 <div class="products">
-                    <img src="../images/GameHub_covers10.jpg" alt="Forge Legend">
+                    <img src="../images/Forge Legends.jpg" alt="Forge Legend">
                     <h3>Forge Legend</h3>
                     <p>-65%</p>
-                    <a href="buy.html" class="sale price_button">8.99$</a>
+                    <a class="sale add-cart" onclick="alertbox()">8.99$</a>
                 </div>
                 <div class="products">
-                    <img src="../images/GameHub_covers8.jpg" alt="Boxer">
+                    <img src="../images/Boxing.jpg" alt="Boxer">
                     <h3>Boxer</h3>
                     <p>-80%</p>
-                    <a href="buy.html" class="sale price_button">3.99$</a>
+                    <a class="sale add-cart" onclick="alertbox()">3.99$</a>
                 </div>
             </section>
             <section class="top">
@@ -151,6 +139,7 @@
                 </div>
             </section>
         </main>
+        <script src="../js/main.js"></script>
         <footer>Copyright &copy GameHub 2021</footer>
     </body>
 </html>

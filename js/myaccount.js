@@ -31,3 +31,6 @@ function checkLength(value, len) {
     }
 }
 
+function alertbox() {
+    alert("Item Added To Cart");
+}

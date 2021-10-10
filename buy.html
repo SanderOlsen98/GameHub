@@ -9,6 +9,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <script src="https://kit.fontawesome.com/9f8fc3ed9d.js" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
     </head>
     <body>
         <header>
@@ -39,7 +40,7 @@
                     <li><a href="createaccount.html">Create Account</a></li>
                 </ul>
                 <div>
-                    <span class="cart"><i class="fas fa-shopping-cart"></i></span>
+                    <a href="cart.html"><span class="cart" id="cartinfo"><i class="fas fa-shopping-cart"></i><span>0</span></span></a>
                 </div>
             </nav>
         </header>
@@ -51,63 +52,59 @@
             </section>
             <section class="featured">
                 <div class="products">
-                    <img src="images/GameHub_covers9.jpg" alt="Cyberpunk">
+                    <img src="../images/Cyberpunk.jpg" alt="Cyberpunk">
                     <h3>Cyberpunk</h3>
-                    <a href="buy.html" class="price price_button">29.99$</a>
+                    <a class="price add-cart" onclick="alertbox()">29.99$</a>
                 </div>
                 <div class="products">
-                    <img src="images/GameHub_covers.jpg" alt="Ping Pong">
-                    <h3>Ping Pong</h3>
-                    <a href="buy.html" class="price price_button">9.99$</a>
-                </div>
-                <div class="products">
-                    <img src="images/GameHub_covers5.jpg" alt="Assassin">
-                    <h3>Assassin</h3>
-                    <a href="buy.html" class="price price_button">19.99$</a>
-                </div>
-                <div class="products">
-                    <img src="images/GameHub_covers3.jpg" alt="Black">
+                    <img src="../images/Black.jpg" alt="Black">
                     <h3>Black</h3>
-                    <a href="buy.html" class="price price_button">24.99$</a>
+                    <a class="price add-cart" onclick="alertbox()">24.99$</a>
                 </div>
                 <div class="products">
-                    <img src="images/GameHub_covers2.jpg" alt="Super Duper">
+                    <img src="../images/Ping Pong.jpg" alt="Ping Pong">
+                    <h3>Ping Pong</h3>
+                    <a class="price add-cart" onclick="alertbox()">9.99$</a>
+                </div>
+                <div class="products">
+                    <img src="../images/Super Duper.jpg" alt="Super Duper">
                     <h3>Super Duper</h3>
-                    <a href="buy.html" class="price price_button">5.99$</a>
-                </div>
-            </section>
-            <section class="top">
-            </section>
-            <section class="featured">
-                <div class="products">
-                    <img src="images/GameHub_covers4.jpg" alt="Furious">
-                    <h3>Furious</h3>
-                    <p>-40%</p>
-                    <a href="buy.html" class="sale price_button">13.99$</a>
+                    <a class="price add-cart" onclick="alertbox()">5.99$</a>
                 </div>
                 <div class="products">
-                    <img src="images/GameHub_covers6.jpg" alt="Sapce War">
-                    <h3>Space War</h3>
-                    <p>-60%</p>
-                    <a href="buy.html" class="sale price_button">12.99$</a>
+                    <img src="../images/Assassin.jpg" alt="Assassin">
+                    <h3>Assassin</h3>
+                    <a class="price add-cart" onclick="alertbox()">19.99$</a>
                 </div>
                 <div class="products">
-                    <img src="images/GameHub_covers7.jpg" alt="Racing">
-                    <h3>Racing</h3>
-                    <p>-63%</p>
-                    <a href="buy.html" class="sale price_button">17.99$</a>
-                </div>
-                <div class="products">
-                    <img src="images/GameHub_covers10.jpg" alt="Forge Legend">
+                    <img src="../images/Forge Legends.jpg" alt="Forge Legend">
                     <h3>Forge Legend</h3>
                     <p>-65%</p>
-                    <a href="buy.html" class="sale price_button">8.99$</a>
+                    <a class="sale add-cart" onclick="alertbox()">8.99$</a>
                 </div>
                 <div class="products">
-                    <img src="images/GameHub_covers8.jpg" alt="Boxer">
+                    <img src="../images/Boxing.jpg" alt="Boxer">
                     <h3>Boxer</h3>
                     <p>-80%</p>
-                    <a href="buy.html" class="sale price_button">3.99$</a>
+                    <a class="sale add-cart" onclick="alertbox()">3.99$</a>
+                </div>
+                <div class="products">
+                    <img src="../images/Furious.jpg" alt="Furious">
+                    <h3>Furious</h3>
+                    <p>-40%</p>
+                    <a class="sale add-cart" onclick="alertbox()">13.99$</a>
+                </div>
+                <div class="products">
+                    <img src="../images/Space War.jpg" alt="Space War">
+                    <h3>Space War</h3>
+                    <p>-60%</p>
+                    <a class="sale add-cart" onclick="alertbox()">12.99$</a>
+                </div>
+                <div class="products">
+                    <img src="../images/Racing.jpg" alt="Racing">
+                    <h3>Racing</h3>
+                    <p>-63%</p>
+                    <a class="sale add-cart" onclick="alertbox()">17.99$</a>
                 </div>
             </section>
             <section class="favicons">
@@ -174,6 +171,7 @@
                 </div>
             </section>
         </main>
+        <script src="js/main.js"></script>
         <footer>Copyright &copy GameHub 2021</footer>
     </body>
 </html>

@@ -380,7 +380,7 @@ h3,
   overflow: hidden;
 }
 
-.price_button {
+.add-cart {
   padding: 8px 20px;
   font-size: 0.8em;
   grid-column: 2;
@@ -618,7 +618,7 @@ footer {
 
 .loginbox {
   flex-wrap: wrap;
-  width: 320px;
+  width: 300px;
   height: 540px;
   background: #dfdfdf;
   color: #000;
@@ -630,15 +630,6 @@ footer {
   padding: 70px 30px;
   border-radius: 20px;
   box-shadow: 1px 3px 2px 5px #2d3025;
-}
-
-.avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: absolute;
-  top: -50px;
-  left: calc(50% - 50px);
 }
 
 .loginbox p {
@@ -696,4 +687,151 @@ input[type="password"] {
 
 .cart {
   margin-right: 20rem;
+}
+
+form {
+  padding: 2em;
+  background: rgb(216, 216, 216);
+  border-radius: 1rem;
+}
+
+input {
+  width: 100%;
+  margin-top: 2px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  background: rgb(11, 91, 133);
+  border: none;
+  width: 200px;
+  padding: 1rem;
+  color: white;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 0.2rem;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+/* Cart Page */
+
+.container-products1 {
+  max-width: 650px;
+  justify-content: space-around;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.container-products1 ion-icon {
+  font-size: 25px;
+  color: blue;
+  margin-left: 10px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.product-header1 {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  justify-content: flex-start;
+  border-bottom: 4px solid lightgray;
+  margin: 0 auto;
+}
+
+.product-title1 {
+  width: 45%;
+}
+
+.price1 {
+  width: 15%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+
+.quantity1 {
+  width: 30%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+
+.total1 {
+  width: 10%;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+}
+
+.product1 {
+  width: 45%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.product1 ion-icon {
+  cursor: pointer;
+  
+}
+
+.product1 {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product1 img {
+  width: 75px;
+}
+
+.basketTotalContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 10px 0;
+}
+
+.basketTotalTitle {
+  width: 30%;
+}
+
+.basketTotal {
+  width: 10%;
+}
+
+@media(max-width: 500px) {
+  nav h2 {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 10px;;
+  }
+
+  .sm-hide {
+      display: none;;
+  }
+
+  .product1,
+  .product-header1 {
+      justify-content: center;
+  }
+
+  .basketTotalContainer {
+      padding-right: 8%;
+  }
 }

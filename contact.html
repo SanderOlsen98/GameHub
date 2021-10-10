@@ -8,6 +8,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
+        <script src="js/contact.js"></script>
         <script src="https://kit.fontawesome.com/9f8fc3ed9d.js" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -39,7 +40,7 @@
                     <li><a href="createaccount.html">Create Account</a></li>
                 </ul>
                 <div>
-                    <span class="cart"><i class="fas fa-shopping-cart"></i></span>
+                    <a href="cart.html"><span class="cart" id="cartinfo"><i class="fas fa-shopping-cart"></i><span>0</span></span></a>
                 </div>
             </nav>
         <main>
@@ -47,8 +48,35 @@
             <section class="top">
                 <h2>Contact</h2>
                 <p>E-mail: GameHub@gmail.com</p>
-                <p>Phone: 99999999
-                   </p>
+                <p>Phone: 99999999</p>
+             <section>
+                <form id="contactForm">
+                    <div>
+                        <label>
+                            <h3>Name (required)</h3>
+                            <input name="firstName" id="firstName" />
+                        </label>
+                        <div class="form-error" id="firstNameError">Please enter your first name</div>
+                    </div>
+    
+                    <div>
+                        <label>
+                            <h3>Subject</h3>
+                            <input name="lastName" id="lastName" />
+                        </label>
+                        <div class="form-error" id="lastNameError">Your subject must be at least 10 characters</div>
+                    </div>
+    
+                    <div>
+                        <label>
+                            <h3>E-Mail</h3>
+                            <input name="email" id="email" />
+                        </label>
+                        <div class="form-error" id="emailError">Please enter a valid email address</div>
+                    </div>
+                    <button onclick="alertbox()">Submit</button>
+                </form>    
+             </section>             
             <section class="favicons">
                 <div class="wrapper">
                     <div class="buttons">
@@ -113,6 +141,7 @@
                 </div>
             </section>
         </main>
+        <script src="js/contact.js"></script>
         <footer>Copyright &copy GameHub 2021</footer>
     </body>
 </html>
