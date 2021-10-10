@@ -40,7 +40,10 @@ function validateForm(event) {
 form.addEventListener("submit", validateForm);
 
 function checkLength(value, len) {
-    if (validateform === true) {
+    if (value.trim().length > len) {
+        return true;
+    } else {
+        return false;
     }
 }
 
@@ -52,10 +55,4 @@ function validateEmail(email) {
 
 function alertbox() {
     alert("Successfully Sent");
-
-    if (value.trim().length > len) {
-        return true;
-    } else {
-        return false;
-    }
 }
