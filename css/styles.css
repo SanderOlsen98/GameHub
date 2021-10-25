@@ -421,8 +421,35 @@ h3,
   color: #0800ff;
 }
 
-.products--sale {
+.products1--sale {
   display: flex;
+}
+
+.products1 {
+  background-color: #dfdfdf;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.products1 img {
+  grid-column: -1/1;
+}
+
+.products1 h3 {
+  grid-column: 1;
+  font-size: 0.9em;
+  margin: 5px;
+  text-align: left;
+}
+
+.products1 p {
+  grid-column: 1;
+  font-size: 1em;
+  margin: 5px;
+  text-align: right;
+  font-weight: 200;
+  color: #0800ff;
 }
 
 @media (min-width: 600px) {
