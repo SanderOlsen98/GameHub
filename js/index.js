@@ -4,6 +4,7 @@ const productContainer = document.querySelector("#customID");
 async function getProducts(baseUrl) {
     const response = await fetch (baseUrl);
     const products = await response.json();
+    
     products.forEach(function(product){
         productContainer.innerHTML += `
         <div class="products">
